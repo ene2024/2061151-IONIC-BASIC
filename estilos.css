@@ -1,0 +1,24 @@
+/*selector de etiqueta*/
+
+.boton1{
+    background-color: #385dd8;
+}
+
+.boton2{
+    background-color: #385dd8;
+}
+
+.boton3{
+    background-color: #385dd8;
+}
+
+body{
+    background-color: #537BB1;
+}
+
+/*Estilos para moviles*/
+@media screen and (max-width: 767px){
+    button{
+        display: block;
+    }
+}

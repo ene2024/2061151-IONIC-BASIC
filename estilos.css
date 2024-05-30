@@ -1,39 +1,16 @@
-h3{
-    float: left;
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 120px;
+body {
+    background-color: #537BB1;
 }
 
-input{
-    margin-top: 25px;
+h1,h2{
+    background-color: #2438d275;
+    color: white;
+    text-align: center;
+    height: 50px;
+    border: 2px solid black;
+    padding-top: 5px;
 }
 
-div{
-    margin-bottom: 30px;
-}
-
-button{
-
-    width: 10%;
-    background-color: #73A2F4;
-    color: black;
-    font-size: large;
-    margin-right: 100%;
-    width: 450px;
-    margin-bottom: 15px;
-    margin-left: 90px;
-}
-
-#popUp{
-    display: none;
-}
-
-#message{
-    font-weight: normal;
-}
-
-#continueBt{
-    margin-left: 20px;
-    margin-top: 25px;
+section{
+    border-top: solid 1px black;
 }

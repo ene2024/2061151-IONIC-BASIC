@@ -2,15 +2,8 @@ body {
     background-color: #537BB1;
 }
 
-h1,h2{
-    background-color: #2438d275;
-    color: white;
+ion-col{
+    background-color: #79C1F0;
+    border: solid 1px black;
     text-align: center;
-    height: 50px;
-    border: 2px solid black;
-    padding-top: 5px;
-}
-
-section{
-    border-top: solid 1px black;
 }

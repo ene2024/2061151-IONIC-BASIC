@@ -1,16 +1,23 @@
-var miTxt = document.getElementById("txt");
-var texto = "";
+var articulo = document.getElementById("articuloID");
+var monto = document.getElementById("montoID");
+var art = '';
+var mont = '';
+var total = 0;
 
-function FuncionIm(){
-    texto = miTxt.value;
-    alert(texto);
-}
+var seccionTicket = document.getElementById("ticket");
+var preciototal = document.getElementById("total");
 
-function FuncionEl(){
-    miTxt.value = "";
-    texto = "";
-}
+function imprimir(){
+    mont = parseFloat(monto.value);
+    art = articulo.value;
+    total = total + mont;
 
-function Cambiar(){
+    var elemento = document.createElement("p");
+    elemento.innerHTML = art + ".... $" + mont;
 
+    seccionTicket.insertBefore(elemento, preciototal);
+    preciototal.textContent = "Total: $" + total;
+
+    articulo.value = '';
+    monto.value = '';
 }

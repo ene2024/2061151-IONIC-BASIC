@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
 import { ProductosComponent } from './productos/productos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ListaAlumnosComponent, ProductosComponent, ProductoDetalleComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

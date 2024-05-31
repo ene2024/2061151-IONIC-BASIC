@@ -9,17 +9,18 @@ import { ConsultaService } from '../consulta.service';
 
 export class ProductosComponent  implements OnInit {
 
-  constructor(private consulta: ConsultaService) {}
+  constructor(private consulta: ConsultaService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.obtenerProductos();
+  }
 
-  productos: any[] = [];
+  productos: any = [];
 
-  obtenerProductos(): void{
-    this.consulta.getProductos().subscribe((resp: Object) => {
-      console.log(resp);
-      this.productos = resp as any[]; 
-    });
+  obtenerProductos() : void {
+    this.consulta.getProductos().subscribe(res => {
+      this.productos = res;
+    })
   }
 
 }

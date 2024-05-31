@@ -13,4 +13,8 @@ export class ConsultaService {
     return this.http.get('https://fakestoreapi.com/products');
   }
 
+  getProductoDetalle(id: string) {
+    return this.http.get('https://fakestoreapi.com/products/'+ id)
+  }
+
 }

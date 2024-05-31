@@ -1,0 +1,24 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Tomate una selfie!!
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-button id="boton" (click)="selfie()">
+      <ion-icon id="camara" name="camera-outline"></ion-icon>
+    </ion-button>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col id="columna" size="3.8" *ngFor="let foto of fotos; index as i">
+          <img [src]="foto.webViewPath" alt="">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+</ion-app>

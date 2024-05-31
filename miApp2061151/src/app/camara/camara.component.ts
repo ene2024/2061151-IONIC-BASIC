@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FotoService } from '../foto.service';
 import { Foto } from '../foto.model';
 
+
 @Component({
   selector: 'app-camara',
   templateUrl: './camara.component.html',
@@ -10,6 +11,7 @@ import { Foto } from '../foto.model';
 export class CamaraComponent  implements OnInit {
 
   constructor(public foto : FotoService) { }
+  
 
   public fotos:Foto[] =this.foto.fotoscapturadas;
 
@@ -17,6 +19,10 @@ export class CamaraComponent  implements OnInit {
 
   selfie(){
     this.foto.addNewToGallery()
+  }
+
+  elegir(){
+    this.foto.EscogerFoto()
   }
 
 }
